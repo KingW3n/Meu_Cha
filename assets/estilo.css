@@ -1,0 +1,100 @@
+.centercontainer{
+	align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*
+	divs Login
+*/
+#boxLogin{
+	width: 500px;
+    min-height: 600px;
+    min-width: 500px;
+}
+#boxLogin	img{
+	margin-top: 10px;
+
+}
+#formLogin{
+	margin-top: 30px;
+	width: 80%;
+	padding: 10%;
+	margin-left: 10%;
+	height:  auto;
+	min-height: 100px;
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 0 0 1em grey;
+}
+
+#formLogin	form{
+	width: 100%;
+
+}
+#boxLogin	.redesocial{
+	width: 230px;
+	cursor: not-allowed;
+
+}
+
+
+
+
+/*
+	estilo Cadastro
+*/
+#boxCadastro{
+	width: 900px;
+}
+#formCadastro{
+	margin-top: 30px;
+	width: 80%;
+	padding: 10%;
+	margin-left: 10%;
+	height:  auto;
+	min-height: 100px;
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 0 0 1em grey;
+}
+
+#formCadastro	label{
+	margin-top: 15px;
+}
+#labelNovoUser	img{
+	width: 50px;
+}
+
+#labelNovoUser{
+	font-weight: bold;
+	font-size: 120%;
+}
+
+
+
+/*
+	Classes com margin
+*/
+.top20{
+	margin-top: 20px;
+}
+.top40{
+	margin-top: 40px;
+}
+/*
+	Classes com font-size
+*/
+.lbFont80{
+	font-size: 80%;
+}
+
+/*
+	Classes com Background-colors
+*/
+
+.BackgroundColor1{
+	background-color: #D3D3D3;
+}
