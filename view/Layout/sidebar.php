@@ -1,7 +1,7 @@
 <!-- Sidebar -->
 		<div class="sidebar">
 			<div id="imageLogo">
-				<img src="../../img/LogoMeucha.png" width="100%">
+				<img src="../../img/LogoMeucha_branco.png" width="100%">
 			</div>
 			<ul class="menuVertical">
 				<div class="sidebar-heading">

@@ -12,16 +12,9 @@
 <body onload="">
 	<?php include "../Layout/sidebar.php";?>
 		<div class="conteudo"></div>
-		<div class="footer">
-			 <div class="copyright text-center my-auto">
-            <span>Copyright © Your Website 2020</span>
-        </div>
-		</div>
 	
 </body>
-<footer class="sticky-footer bg-white">
-    <div class="container my-auto">
-       
-    </div>
+<footer>
+	<?php include "../Layout/footer.php";?>
 </footer>
 </html>
