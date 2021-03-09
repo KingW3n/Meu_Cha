@@ -26,7 +26,9 @@ function FuncLogin (){
             	success: function(response){
                 	if(response == "Error: Login ou senha não encontrado!"){
 						$("#validationServer03Feedback").css({"display":"block"});
-                	}else{
+                	}else if(response == "Logado"){
+                        window.location.href = "home.php";
+                    }else{
                 		alert(response);
             		}
             	}

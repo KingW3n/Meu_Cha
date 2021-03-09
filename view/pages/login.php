@@ -55,9 +55,8 @@ if(!isset($_COOKIE["cookieUserMeuCha"])) {
 			<center><br><label class="lbFont80">Não tem uma conta? <a href="cadastro.php">Registre-se</a></label><br><br><br></center>
 		</div>
 	</div>
-	
 </body>
 <?php
-	include '../../view/Layout/footer/footer.php';
+	include '../../view/Layout/footer/footerIndex.php';
 ?>
 </html>

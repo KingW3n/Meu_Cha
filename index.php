@@ -38,6 +38,6 @@
 	
 </body>
 <?php
-	include 'view/Layout/footer/footer.php';
+	include 'view/Layout/footer/footerIndex.php';
 ?>
 </html>

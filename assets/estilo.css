@@ -74,7 +74,6 @@
 }
 
 
-
 /*
 	Classes com margin
 */
@@ -97,4 +96,37 @@
 
 .BackgroundColor1{
 	background-color: #D3D3D3;
+}
+
+
+
+
+
+.sidebar{
+	width: 220px;
+	height: 100vh;
+	background-color: black;
+	float: left;
+	position: fixed;
+}
+.topSidebar{
+	width: 100% - 220px;
+	width: calc(100% - 220px);
+	height: 60px;
+	background-color: #F8F8FF;
+	float: right;
+}
+.conteudo{
+	width: 100% - 220px;
+	width: calc(100% - 220px);
+	height: 100vh;
+	background-color: yellow;
+	float: right;
+}
+.footer{
+	width: 100% - 220px;
+	width: calc(100% - 220px);
+	height: 180px;
+	background-color: red;
+	float: right;
 }
