@@ -6,6 +6,9 @@
     justify-content: center;
 }
 
+
+
+
 /*
 	divs Login
 */
@@ -83,16 +86,36 @@
 .top40{
 	margin-top: 40px;
 }
+.bot40{
+	margin-bottom: 40px;
+}
 /*
 	Classes com font-size
 */
 .lbFont80{
 	font-size: 80%;
 }
+.lbFont70{
+	font-size: 70%;
+}
+.lbFont50{
+	font-size: 50%;
+}
+.margintop-20{
+	margin-top: -50px;
+}
+
+
 .width50{
 	width: 50%;
 }
+.width90{
+	width: 90%;
+}
 
+.dsplayNone{
+	display: none;
+}
 /*
 	Classes com Background-colors
 */
@@ -101,6 +124,11 @@
 	background-color: #D3D3D3;
 }
 
+
+
+.fontPadraoSite{
+	font-family: fantasy;
+}
 
 
 /*
@@ -114,8 +142,7 @@
 	margin-top: 90px;
 	margin-bottom: 40px;
 	background-color: white;
-	box-shadow: 0 0 2px; grey;
-
+	box-shadow: 0 0 2px grey;
 }
 #LogoConviteNovoConvite{
 	width:130px;
@@ -124,6 +151,11 @@
 	margin-top: 10px;
 }
 
+
+
+#conteudoEventoConvite{
+
+}
 
 
 .sidebar{

@@ -10,10 +10,17 @@
     <script type="text/javascript" src="../../assets/script.js"></script>
 
 </head>
-<body onload="">
+<body onload="FuncLogin()">
 	<?php include "../Layout/sidebar.php";?>
 	<div class="conteudo">
 		<div id="novoEventoConvite">
+			<div id="conteudoEventoConvite" class="">
+				<center>
+					<h1 class="fontPadraoSite">CHÁ REVELAÇÃO</h1>
+				 	<p class="width90">Estamos ansiosos para saber o sexo do nosso bebê, convidamos você para esse momento tao especial onde saberemos se é um menino ou menina!</p>
+				 	<p>os nomes ja sabemos será:</p>
+				 </center>
+			</div>
 			<img id="LogoConviteNovoConvite" src="../../img/LogoMeucha.png">
 		</div>
 		<div class="row">
@@ -21,73 +28,51 @@
 			<div class="col-6">
 
 				<form method="POST" onsubmit="return false" class="row g-3">
-					<div class="col-md-4">
-            			<label for="inputTipoEvento" class="form-label">Tipo de Evento</label>
+					<div class="col-md-12">
+            			<label for="inputTipoEvento" class="form-label">Selecione o tipo de Evento</label>
             			<select id="inputTipoEvento" class=" form-control form-select">
               				<option selected value="">Selecione..</option>
-              				<option value="R">Chá de revelação</option>
+              				<option value="CR">Chá de revelação</option>
               				<option value="CF">Chá de frauda</option>
               				<option value="CN">Chá de casa nova</option>
               				<option value="CP">Chá de panela</option>
             			</select>
           			</div>
-          			<div class="col-12">
-            			<label for="inputNomeEvento" class="form-label">Nome do evento:</label>
-            			<input type="text" class="form-control" id="inputNomeEvento" >
+          			<div class="NovoEventoConteudo	dsplayNone">
+          				<div class="row">
+          					<div class="col-12" >
+            					<label for="inputNomeEvento" class="form-label">Nome do evento:</label>
+            					<input type="text" class="form-control" id="inputNomeEvento">
+          					</div>
+          					<div class="col-md-6">
+            					<label for="inputNomeDele" class="form-label	labelNomeDele">Nome do papai</label>
+            					<input type="text" class="form-control" id="inputNomeDele" placeholder="">
+          					</div>
+          					<div class="col-md-6">
+            					<label for="inputNomeDela" class="form-label	labelNomeDela">Nome da mamãe</label>
+            					<input type="text" class="form-control" id="inputNomeDela" placeholder="">
+          					</div>
+          					<div class="col-md-12	dsplayNone divNomeBebe">
+            					<label for="inputNomeDele" class="form-label">Nome do Bebe <div id="emailHelp" class="form-text  col-12 "> <label class="lbFont70">Caso seja um chá revelação informe os nomes separados pelo &, exemplo: Julia & Ricardo. </label></div></label>
+            					<input type="text" class="form-control" id="inputNomeDele" placeholder="">
+          					</div>
+          					<div class="col-6">
+            					<label for="inputDataEvento" class="form-label">Data do evento</label>
+            					<input type="date" class="form-control" id="inputDataEvento" min="<?php echo (date('Y-m-d')) ?>">
+          					</div>
+          					<div class="col-md-6">
+            					<label for="inputHora" class="form-label">Hora do evento</label>
+            					<input type="time" class="form-control" id="inputHora" placeholder="">
+          					</div>
+          					<div class="col-md-12">
+            					<label for="inputuser" class="form-label">Endereço <div id="emailHelp" class="form-text  col-12 "><label class="lbFont70">Digite o endereço completo com numero , bairro e cidade. exemplo: Rua do abraço Nº 1950 - Boa vista - Itaboraí - Rj </label></div></label>
+            					<input type="" class="form-control" id="inputuser">
+          					</div>
+          					<div class="col-12">
+            					<center><button type="submit" id="btnCadastro" class="btn btn-primary top40 bot40 ">Cadastrar</button></center>
+         					</div>
+         				</div>
           			</div>
-          			<div class="col-md-6">
-            			<label for="inputNomeDele" class="form-label">Nome do papai:</label>
-            			<label for="inputNomeDele" class="form-label">Nome dele:</label>
-            			<input type="text" class="form-control" id="inputNomeDele" placeholder="">
-          			</div>
-          			<div class="col-md-6">
-            			<label for="inputNomeDela" class="form-label">Nome da mamãe:</label>
-            			<label for="inputNomeDela" class="form-label">Nome dela:</label>
-            			<input type="text" class="form-control" id="inputNomeDela" placeholder="">
-          			</div>
-          			<div class="col-md-12">
-            			<label for="inputNomeDele" class="form-label">Nome do Bebe:</label>
-            			<div id="emailHelp" class="form-text  col-12">Caso seja um chá revelação informe os nomes separados pelo &, exemplo: Julia & Ricardo.</div>
-            			<input type="text" class="form-control" id="inputNomeDele" placeholder="">
-          			</div>
-          <div class="col-md-6">
-            <label for="inputEmail" class="form-label">E-mail</label>
-            <input type="email" class="form-control" id="inputEmail" placeholder="meucha@exemple.com">
-          </div>
-          <div class="col-md-6">
-            <label for="inputuser" class="form-label">Usuário</label>
-            <input type="text" class="form-control" id="inputuser">
-          </div>
-  			  <div class="col-md-6">
-            <label for="inputPassword" class="form-label">Senha</label>
-            <input type="password" class="form-control" id="inputPassword">
-          </div>
-          <div class="col-md-6">
-            <label for="inputPassword4" class="form-label">Confirme a senha:</label>
-            <input type="password" class="form-control" id="inputPassword4">
-          </div>
-            <div id="emailHelp" class="form-text  col-12">We'll never share your email with anyone else.</div>
-          <div class="col-6">
-            <label for="inputNasminto" class="form-label">Data de Nascimento</label>
-            <input type="date" class="form-control" id="inputNasminto" min="1920-01-01">
-          </div>
-          <div class="col-md-6">
-            <label for="inputTelefone" class="form-label">Telefone</label>
-            <input type="text" class="form-control  telefoneMask" id="inputTelefone" placeholder="(21)00000-0000">
-          </div>
-          <div class="col-md-6">
-            <label for="inputSexo" class="form-label">Sexo</label>
-            <select id="inputSexo" class=" form-control form-select">
-              <option selected value="" ="">Selecione..</option>
-              <option value="F">Feminino</option>
-              <option value="M">Masculino</option>
-              <option value="O">Outros</option>
-              <option value="N">Não Informar</option>
-            </select>
-          </div>
-          <div class="col-12">
-            <center><button type="submit" id="btnCadastro" class="btn btn-primary  top40">Cadastrar</button></center>
-          </div>
 				</form>
 			</div>
 			<div class="col-3"></div>

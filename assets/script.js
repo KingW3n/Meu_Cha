@@ -49,6 +49,22 @@ function funcCadastro (){
 
 }
 
+function FuncLogin(){
+    $("#inputTipoEvento").change(function(){
+        if($(this).val() == "CR"){
+            $(".labelNomeDele").text("Nome do papai");
+            $(".labelNomeDela").text("Nome da mamãe");
+            $(".divNomeBebe").show();
+            $(".NovoEventoConteudo").show();
+            $('#novoEventoConvite').css("padding-top", "215px"); 
+            $('#novoEventoConvite').css("background-image", "url(../../img/chaRevelecao.png)");
+
+        }else{
+            $(".NovoEventoConteudo").hide();
+            $(".divNomeBebe").hide();
+        }
+    })
+}
 
 
 function VerificarCampCadastro(){
