@@ -6,9 +6,11 @@ function FuncIndex(){
 }
 
 
-
-function FuncLogin (){
+ 
+function FuncLogin(){
+    alert("hey");
 	$("#btnEntrar").click(function(){
+        alert("hey");
 		let check = "";
 		let user =	$("#campuser").val();
 		let senha = $("#campsenha").val();

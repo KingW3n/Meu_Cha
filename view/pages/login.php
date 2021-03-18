@@ -33,8 +33,8 @@ if(!isset($_COOKIE["cookieUserMeuCha"])) {
 			<div id="formLogin" class="">
 				<form method="POST" onsubmit="return false">
   					<div class="mb-3">
-   						<label for="exampleInputEmail1" class="form-label">Usuario</label>
-    					<input type="text" class="form-control" id="campuser" value="<?php echo $user ?>" aria-describedby="emailHelp" required="">
+   						<label for="campuser" class="form-label">Usuario</label>
+    					<input type="text" class="form-control" id="campuser" value="<?php echo $user ?>" required="">
  					</div>
  					 <div id="validationServer03Feedback" class="invalid-feedback">
       					Usuario ou senha estão incorretos.
