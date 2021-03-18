@@ -26,6 +26,7 @@
   	try {
       extract($_POST);
       $resposta = "";
+      $_SESSION['idUser']="";
       // Chama a conexao com o db    
       $con = model_conexao();
       // se o lembrar de mim estiver marcado ele registra cookeies para lembrar dele 
