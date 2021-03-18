@@ -10,16 +10,11 @@
     <script type="text/javascript" src="../../assets/script.js"></script>
 
 </head>
-<body onload="FuncLogin()">
+<body onload="funcNovoEvento()">
 	<?php include "../Layout/sidebar.php";?>
 	<div class="conteudo">
 		<div id="novoEventoConvite">
 			<div id="conteudoEventoConvite" class="">
-				<center>
-					<h1 class="fontPadraoSite">CHÁ REVELAÇÃO</h1>
-				 	<p class="width90">Estamos ansiosos para saber o sexo do nosso bebê, convidamos você para esse momento tao especial onde saberemos se é um menino ou menina!</p>
-				 	<p>os nomes ja sabemos será:</p>
-				 </center>
 			</div>
 			<img id="LogoConviteNovoConvite" src="../../img/LogoMeucha.png">
 		</div>
@@ -53,8 +48,8 @@
             					<input type="text" class="form-control" id="inputNomeDela" placeholder="">
           					</div>
           					<div class="col-md-12	dsplayNone divNomeBebe">
-            					<label for="inputNomeDele" class="form-label">Nome do Bebe <div id="emailHelp" class="form-text  col-12 "> <label class="lbFont70">Caso seja um chá revelação informe os nomes separados pelo &, exemplo: Julia & Ricardo. </label></div></label>
-            					<input type="text" class="form-control" id="inputNomeDele" placeholder="">
+            					<label for="inputNomedoBebe" class="form-label">Nome do Bebe <div id="emailHelp" class="form-text  col-12 "> <label class="lbFont70">Caso seja um chá revelação informe os nomes separados pelo &, exemplo: Julia & Ricardo. </label></div></label>
+            					<input type="text" class="form-control" id="inputNomedoBebe" placeholder="">
           					</div>
           					<div class="col-6">
             					<label for="inputDataEvento" class="form-label">Data do evento</label>
