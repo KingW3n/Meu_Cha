@@ -26,7 +26,9 @@ function FuncLogin (){
             	success: function(response){
                 	if(response == "Error: Login ou senha não encontrado!"){
 						$("#validationServer03Feedback").css({"display":"block"});
-                	}else{
+                	}else if(response == "Logado"){
+                        window.location.href = "home.php";
+                    }else{
                 		alert(response);
             		}
             	}
@@ -47,6 +49,22 @@ function funcCadastro (){
 
 }
 
+function FuncLogin(){
+    $("#inputTipoEvento").change(function(){
+        if($(this).val() == "CR"){
+            $(".labelNomeDele").text("Nome do papai");
+            $(".labelNomeDela").text("Nome da mamãe");
+            $(".divNomeBebe").show();
+            $(".NovoEventoConteudo").show();
+            $('#novoEventoConvite').css("padding-top", "215px"); 
+            $('#novoEventoConvite').css("background-image", "url(../../img/chaRevelecao.png)");
+
+        }else{
+            $(".NovoEventoConteudo").hide();
+            $(".divNomeBebe").hide();
+        }
+    })
+}
 
 
 function VerificarCampCadastro(){
